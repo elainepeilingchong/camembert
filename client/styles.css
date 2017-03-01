@@ -12,7 +12,9 @@
 }
 
 .searchbar{
-    padding-top: 5px;
+    margin-top: 23px;
+    border: none;
+    padding: 5px 10px 5px 10px;
 }
 
 
