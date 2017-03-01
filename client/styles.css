@@ -5,6 +5,9 @@
     margin: 2%;
     text-decoration: none;
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    
 }
 
 .navbar{
@@ -15,6 +18,15 @@
     margin-top: 23px;
     border: none;
     padding: 5px 10px 5px 10px;
+}
+
+#logo{
+    width: 100%;
+}
+
+#linklogo{
+    float: left;
+    width: 20%;
 }
 
 
