@@ -6,10 +6,46 @@
         <header>
            {{>navbar}}
             {{>reset}}
-        </header>
+            <br>
+
+            <!-- CAROUSSEL -->
+            
+            <div id = "myCarousel" class = "carousel slide">
+                
+                <!-- Indicateurs pour caroussel -->
+                <ol class = "carousel-indicators">
+                    <li data-target = "#myCarousel" data-slide-to = "0" class ="active"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                </ol>
+                
+                <!-- Mise en place du contenu pour le Caroussel -->
+                <div class = "carousel-inner">  
+                    <div class = "item active">
+                        <img src = "../../public/images/Langkawi/ExtraImage" alt = "img1" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src = "../img/Communication.jpg" alt = "img2" class = "img-responsive" width="100%">
+                    </div>
+                    
+                    <div class="item">
+                        <img src  ="/tmp/camembert2/camembert/public/images/Aix" alt = "img3" class = "img-responsive" width="100%">
+                    </div>                  
+                </div>
+                
+                <!-- Contrôles du Caroussel -->
+                <a class = "carousel-control left" href = "#myCarousel" role="button" data-slide = "prev">
+                    <span class = "icon-prev"></span>
+                </a>
+                
+                <a class = "carousel-control right" href = "#myCarousel" role="button" data-slide = "next">
+                    <span class = "icon-next"></span>
+                </a>
+            </div>
+</header>
         <main>
             {{>yield}}
-            
         </main>
     </body>
 </template>
