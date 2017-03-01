@@ -10,3 +10,24 @@
 .navbar{
      background-color: darkgrey;
 }
+
+.searchbar{
+    margin-top: 23px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/****************************************Footer*********************************************/
+
+.footer{
+    background-color: #233b6c;
+    width: 100%;
+    position: fixed;
+}
+
+.footer p{
+    text-align: center;
+    color: darkgrey;
+    padding: 10px;
+}
