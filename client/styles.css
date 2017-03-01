@@ -3,4 +3,10 @@
 .navbar a{
     float:left;
     margin: 2%;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+     background-color: darkgrey;
 }
