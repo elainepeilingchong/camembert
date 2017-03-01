@@ -4,15 +4,14 @@ Router.configure({
 });
 
 Router.route("/", {
-    template: "home"
-});
-
-Router.route('/city/:id', {
-    template: "city",
-    data: function () {
-        Console.log(this.params.id)
-		//Cities.findOne (_id:this.params.id);
-		return (name : 'Aix', weather : 'sun')
+    template: "home", 
+    data : function() {
     }
 });
 
+Router.route('/city/:_id', {
+    template: "city",
+    data: function () {
+		return Cities.findOne({_id:this.params._id});
+    }
+});

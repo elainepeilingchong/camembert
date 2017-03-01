@@ -25,3 +25,4 @@ autopublish
 insecure
 twbs:bootstrap
 iron:router@=1.0.12
+iron:middleware-stack@1.1.0

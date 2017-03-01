@@ -1,0 +1,14 @@
+<template name="allCity">
+    {{#each c in cities}}
+    <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+    <h1>{{c.name}}</h1>
+    <p>{{c.description}}</p>
+    {{#each a in c.activities}}
+    <p>
+        {{a.name}}
+    </p>
+    {{/each}}
+    {{/each}}
+</template>
+
+
