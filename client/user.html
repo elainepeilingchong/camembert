@@ -1,6 +1,6 @@
 <template name="addCity">
     <h1 class="title"> Add New City </h1>
-    
+    <form class=" formulaire" >
     <div class="input">
         
         <label>Name of the City</label><input name="city" id="title" type="text"><br>
@@ -17,10 +17,6 @@
         <input name="newplace" class="btn" id="submit" value="Add another Place" type="submit">
         
         <label>Name of the Place</label><input name="place" id="title" type="text"><br>
-        
-        <div class="input">
-            <label>add a picture</label><input accept="image/*" name="photo1" type="file"><br>
-        </div>
 
         <div class="textarea">
             <label class="align">Description of the Place</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
@@ -34,10 +30,6 @@
             
             <label>Name of the Event</label><input name="event" id="title" type="text"><br>
         
-            <div class="input">
-                <label>add a picture</label><input accept="image/*" name="photo1" type="file"><br>
-            </div>
-
         <div class="textarea">
             <label class="align">Description of the Event</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
             
@@ -50,6 +42,8 @@
     
      
     <input class="btn" id="submit" value="Submit" type="submit">
+        
+    </form>
     
 
     
