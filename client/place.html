@@ -1,0 +1,18 @@
+<template name="place">
+    <h1>{{name}}</h1>
+ 
+    {{#each p in pictures}} 
+    <img src= {{p}} class="picture-city" alt="Mountain View" style="width:304px;height:228px;" >
+    {{/each}} 
+    <p>{{description}}</p>
+    <p>Comments</p>
+    <p>
+        {{#each c in comments}}
+        
+        {{c.text}}
+        {{c.user.email}}
+        {{/each}}
+       </p>
+    <p>hello</p>
+    
+</template>

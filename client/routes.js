@@ -18,3 +18,10 @@ Router.route('city/:_id', {
 		return Cities.findOne({_id:this.params._id});
     }
 });
+
+Router.route('/activities/:_id', {
+    template: "place",
+    data: function () {
+		return Activities.findOne({_id:this.params._id});
+    }
+});
