@@ -1,0 +1,12 @@
+<template name="city">
+    {{#each c in cities}}
+    <img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;">
+    <h1>{{c.name}}</h1>
+    <p>{{c.description}}</p>
+    {{#each a in c.activities}}
+    <p>
+        {{a.name}}
+    </p>
+    {{/each}}
+    {{/each}}
+</template>
