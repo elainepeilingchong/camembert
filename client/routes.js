@@ -5,10 +5,13 @@ Router.configure({
 
 Router.route("/", {
     template: "home", 
-    data : function() {
-    }
 });
-
+Router.route("/about", {
+    template: "about", 
+});
+Router.route("/Cities", {
+    template: "allCity", 
+});
 Router.route('/city/:_id', {
     template: "city",
     data: function () {
