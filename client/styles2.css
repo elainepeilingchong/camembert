@@ -1,0 +1,42 @@
+/**************************page city********************************/
+
+.one-city{
+    
+}
+.description-cities{
+   display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+     
+}
+
+
+
+.one-city{
+    float: left;
+    
+}
+
+.picture-city{
+  position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.name-activity{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+city-name {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*text-align: center;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+

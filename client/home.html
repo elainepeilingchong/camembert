@@ -10,21 +10,26 @@
                 
                 <!-- Mise en place du contenu pour le Caroussel -->
                 <div class = "carousel-inner">  
-                    <div class = "item active">
-                        <img src = "../../public/images/Langkawi/ExtraImage/00a.jpg" alt = "img1" class = "img-responsive" width="100%">
+                   
+                     {{#each c in cities}}
+                    <div class = "item">
+                           
+                        
+                        <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:100%;height:100%;" ></a>
+                        <h1>{{c.name}}</h1>
+    
+                    </div>
+                    {{/each}}
+                    
+                   <div class="item active">
+                        <img src = "/images/Langkawi/ExtraImage/00c.jpg" alt = "img2" class = "img-responsive" width="100%">
                     </div>
                     
-                    <div class="item">
-                        <img src = "../../public/images/stMalo/Place/1a.jpg" alt = "img2" class = "img-responsive" width="100%">
-                    </div>
-                    
-                    <div class="item">
-                        <img src  ="../../public/images/Aix" alt = "img3" class = "img-responsive" width="100%">
-                    </div>                  
+                                 
                 </div>
                 
                 <!-- Contrôles du Caroussel -->
-                <a class = "carousel-control left" href = "#myCarousel" role="button" data-slide = "prev">
+                <a class="carousel-control left" href ="#myCarousel" role="button" data-slide = "prev">
                     <span class = "icon-prev"></span>
                 </a>
                 
@@ -33,4 +38,7 @@
                 </a>
             </div>
 
+                        
+   <!-- <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+    -->
 </template>
