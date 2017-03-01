@@ -1,6 +1,49 @@
 <template name="addCity">
     <h1 class="title"> Add New City </h1>
-git pull
+    <input type="text" value="text" name="city_name"></input>
     
+    <div class="input">
+   <label>Titre</label><input name="titre" id="title" type="text"><br>
+    </div>
+    <div class="textarea">
+        <label>Pitch</label><textarea class="hist align" type="text" name="pitch"></textarea> <br><br>
+    </div>
+    <div id="partPhoto">
+        <div class="input">
+        <label>Fichier</label><input accept="image/*" name="photo1" type="file"><br>
+        </div>
+        <div class="input">
+        <label>Titre de la photo</label><input class="hist" name="titrephoto1" type="text"><br>
+        </div>
+        <div class="textarea">
+        <label class="align">Texte</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
+        <br>
+        </div>
+    </div>
+
+    <a class="part" onclick="ajoutPhoto()">Ajouter une partie</a>
+    <script>
+        function ajoutPhoto() {
+            cpt = cpt+1;
+            var d = '<div id="partPhoto"> \
+                <label>Fichier</label><input type="file" accept="image/*" name="photo'+cpt+'"><br><br> \
+                <label>Titre de la photo</label><input class="hist" type="text" name="titrephoto'+cpt+'"><br> \
+                <div class="textarea"> \
+                    <label class="align" >Texte</label><textarea class="align hist" type="text" name="legende'+cpt+'"> </textarea> <br>\
+                </div>\
+                </div>\
+                </div>';
+            if(cpt<=12) {
+                document.getElementById("partPhoto").innerHTML = document.getElementById("partPhoto").innerHTML + d;
+            }
+            else{
+                alert("Nombre maximal de partie");
+            }
+        }
+    </script>
+     
+    <input class="btn" id="submit" value="Submit" type="submit">
+    
+
     
 </template>
