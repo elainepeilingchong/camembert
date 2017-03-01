@@ -16,6 +16,7 @@
 
 @media screen and (max-width: 993px) {
     #myCarousel{
+     
         display: none;
     }
 }
