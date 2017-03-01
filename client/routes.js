@@ -4,13 +4,13 @@ Router.configure({
 });
 
 Router.route("/", {
-    template: "home", 
+    template: "home"
 });
 Router.route("/about", {
-    template: "about", 
+    template: "about"
 });
 Router.route("/Cities", {
-    template: "allCity", 
+    template: "allCity"
 });
 Router.route('/city/:_id', {
     template: "city",
