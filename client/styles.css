@@ -5,6 +5,9 @@
     margin: 2%;
     text-decoration: none;
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    
 }
 
 .navbar{
@@ -20,6 +23,12 @@
 #logo{
     width: 100%;
 }
+
+#linklogo{
+    float: left;
+    width: 20%;
+}
+
 
 /****************************************Footer*********************************************/
 
