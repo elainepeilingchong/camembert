@@ -10,7 +10,9 @@ Router.route("/", {
 Router.route('/city/:id', {
     template: "city",
     data: function () {
-        console.log(this.params.id)
-        // The value of this id is given by  this.params.id
+        Console.log(this.params.id)
+		//Cities.findOne (_id:this.params.id);
+		return (name : 'Aix', weather : 'sun')
     }
 });
+

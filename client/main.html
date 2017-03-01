@@ -1,13 +1,19 @@
-<!--<template name="main">
+<template name="main">
     <head>
         <title>Visiting Cities !</title>
     </head>
     <body>
         <header>
-            {{>navbar}}
+           {{>navbar}}
+            {{>reset}}
         </header>
         <main>
             {{>yield}}
         </main>
     </body>
-</template>-->
+</template>
+
+
+<template name="city">
+<h3> City information {{name}}</h3>
+</template>
