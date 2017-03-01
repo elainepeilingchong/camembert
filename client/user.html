@@ -1,47 +1,55 @@
 <template name="addCity">
     <h1 class="title"> Add New City </h1>
-    <input type="text" value="text" name="city_name">
+    
     <div class="input">
-   <label>Titre</label><input name="titre" id="title" type="text"><br>
+        
+        <label>Name of the City</label><input name="city" id="title" type="text"><br>
+        <label>Country</label><input name="country" id="title" type="text"><br>
     </div>
+    <div class="input">
+        <label>add a picture</label><input accept="image/*" name="pic1" type="file"><br>
+        </div>
     <div class="textarea">
-        <label>Pitch</label><textarea class="hist align" type="text" name="pitch"></textarea> <br><br>
+        <label>Short description about the city </label><textarea class="desc_align" type="text" name="desc"></textarea> <br><br>
     </div>
-    <div id="partPhoto">
+    <div id="addplace">
+        <h1 class="tittle"> Add a New Place</h1>
+        <input name="newplace" class="btn" id="submit" value="Add another Place" type="submit">
+        
+        <label>Name of the Place</label><input name="place" id="title" type="text"><br>
+        
         <div class="input">
-        <label>Fichier</label><input accept="image/*" name="photo1" type="file"><br>
+            <label>add a picture</label><input accept="image/*" name="photo1" type="file"><br>
         </div>
-        <div class="input">
-        <label>Titre de la photo</label><input class="hist" name="titrephoto1" type="text"><br>
-        </div>
-        <div class="textarea">
-        <label class="align">Texte</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
-        <br>
-        </div>
-    </div>
 
-    <a class="part" onclick="ajoutPhoto()">Ajouter une partie</a>
-    <script>
-        function ajoutPhoto() {
-            cpt = cpt+1;
-            var d = '<div id="partPhoto"> \
-                <label>Fichier</label><input type="file" accept="image/*" name="photo'+cpt+'"><br><br> \
-                <label>Titre de la photo</label><input class="hist" type="text" name="titrephoto'+cpt+'"><br> \
-                <div class="textarea"> \
-                    <label class="align" >Texte</label><textarea class="align hist" type="text" name="legende'+cpt+'"> </textarea> <br>\
-                </div>\
-                </div>\
-                </div>';
-            if(cpt<=12) {
-                document.getElementById("partPhoto").innerHTML = document.getElementById("partPhoto").innerHTML + d;
-            }
-            else{
-                alert("Nombre maximal de partie");
-            }
-        }
-    </script>
+        <div class="textarea">
+            <label class="align">Description of the Place</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
+            <br>
+        </div>
+    </div>
+        
+        <div id="addevent">
+            <h1 class="tittle"> Add a New Event</h1>
+            <input name="newevent" class="btn" id="submit" value="Add another Event" type="submit"> 
+            
+            <label>Name of the Event</label><input name="event" id="title" type="text"><br>
+        
+            <div class="input">
+                <label>add a picture</label><input accept="image/*" name="photo1" type="file"><br>
+            </div>
+
+        <div class="textarea">
+            <label class="align">Description of the Event</label><textarea class="hist align" type="text" name="legende1"> </textarea><br>
+            
+            <label>Tape the Begening Date </label><input type="date" name="begining">
+            <label>Tape the Ending Date </label><input type="date" name="Ending">
+            
+            <br>
+        </div>
+    </div>
+    
      
-<input class="btn" id="submit" value="Submit" type="submit">
+    <input class="btn" id="submit" value="Submit" type="submit">
     
 
     
