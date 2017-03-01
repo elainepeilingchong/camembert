@@ -6,13 +6,13 @@ Router.configure({
 Router.route("/", {
     template: "home"
 });
-Router.route("/about", {
+Router.route("about", {
     template: "about"
 });
-Router.route("/Cities", {
+Router.route("Cities", {
     template: "allCity"
 });
-Router.route('/city/:_id', {
+Router.route('city/:_id', {
     template: "city",
     data: function () {
 		return Cities.findOne({_id:this.params._id});
