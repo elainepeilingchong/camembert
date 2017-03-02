@@ -94,6 +94,18 @@ city-name {
     text-align: center;
     display: block;
 }
+
+.delete-place input{
+    background-color:darkgrey;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
+    color: white;
+    
+}
+
+.delete-place:hover  input{
+    background-color: #233b6c;
+}
     
     
 
@@ -114,6 +126,7 @@ places{
 
 .comment-submit{
     margin-bottom: 5%;
+    
 }
 
 .comments-name{
@@ -132,3 +145,9 @@ places{
     padding-right: 2%;
 }
 
+
+/**********************commentSubmit page************************/
+
+.comment-post{
+    display: block;
+}
