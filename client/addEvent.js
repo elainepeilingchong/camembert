@@ -16,6 +16,7 @@ Template.addEvent.events({
            $("#end").val("");
           }
 });
+
 Template.addEvent.helpers({
     allpersons : function()
     {

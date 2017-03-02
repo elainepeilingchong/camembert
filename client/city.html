@@ -4,14 +4,14 @@
     
         <p class="description-city">{{{description}}}</p>
     {    <div class='container'><div class='row'>
-    {{#each a in activities}}
+    {{#each activities}}
     <div class="col-md-4 activities">
-    <a href="{{pathFor route='toActivities'}}"><img src={{a.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
-    <h1 class="activity-name">{{a.name}}</h1>
-    <p class="description-cities">{{{a.description}}}</p>
+    <a href='/activities/{{_id}}'><img src={{picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+    <h1 class="activity-name">{{name}}</h1>
+    <p class="description-cities">{{{description}}}</p>
         </div>
     {{/each}}
-    <a href="/addEvent/{{_id}}"><img src="/images/add_button.jpeg"></a>
+    <a href="/addEvent/{{_id}}"><img src="/images/add_button.jpeg" style="width:50%;height:50%;"></a>
     </div>
         </div>
 </template>

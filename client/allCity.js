@@ -3,3 +3,4 @@ Template.allCity.helpers({
         return Cities.find({});           
     }
   });
+
