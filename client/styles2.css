@@ -19,7 +19,7 @@
 }
 
 .picture-city{
-  position: absolute;
+  
     width: 100%;
     height: auto;
 }
@@ -40,3 +40,114 @@ city-name {
     margin-right: auto;*/
 }
 
+
+/******************place**********************/
+
+.places{
+    width: 100%;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
+
+.place-name{
+    text-align: center;
+    width: 100%;
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+    
+    
+}
+#text{
+    right : 0;
+}
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one-place{
+  /*  min-height: 300px;*/
+   /*text-align: center;*/
+   /* padding: 0px;*/
+    margin-left: 1%;
+    margin-right:1%;
+    
+   
+}
+
+.one-place img{
+    width: 100%;
+    height: auto;
+   /* transition: transform 500ms;
+    transform:translate3d(0,0,0) scale(1.05);*/
+}
+
+.one-place:hover img{
+    /*transform: translate3d(0,0,0) scale(1.05);*/
+}
+
+.delete-place{
+    text-align: center;
+    display: block;
+}
+
+.delete-place input{
+    background-color:darkgrey;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
+    color: white;
+    
+}
+
+.delete-place:hover  input{
+    background-color: #233b6c;
+}
+    
+    
+
+/*
+places{
+    min-height: 300px;
+   
+    width: 100%;
+    height: auto;
+}
+*/
+
+.comments{
+    margin-left:2%;
+    margin-right: 2%;
+    
+}
+
+.comment-submit{
+    margin-bottom: 5%;
+    
+}
+
+.comments-name{
+    margin-bottom: 2%;
+}
+
+.place-description{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.main{
+    width: 100%;
+    padding-left:2%;
+    padding-right: 2%;
+}
+
+
+/**********************commentSubmit page************************/
+
+.comment-post{
+    display: block;
+}

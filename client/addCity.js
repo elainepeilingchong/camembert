@@ -9,6 +9,8 @@ Template.addCity.events({
                         }, function(error, results){
                         Router.go('toPlaceForm', { _id: results });
         });
+           Meteor.call("initUploadServerForCity",name,long,lat,description);
+
           $("#name").val("");
           $("#description").val("");
            $("#long").val("");

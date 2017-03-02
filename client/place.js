@@ -4,7 +4,7 @@ Template.place.helpers({
     }
   });
 Template.place.events({                    
-    'submit form': function (event) {
+    'submit #delForm': function (event) {
         event.preventDefault();
          var id = $("#delete").val();
         alert(id);
