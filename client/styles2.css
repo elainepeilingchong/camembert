@@ -126,6 +126,8 @@ places{
 .add-city-button {
     width: 30%;
     height: auto;
-    vertical-align: center;
-    text-align: center;
+   /* vertical-align: center;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
