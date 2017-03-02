@@ -1,4 +1,5 @@
 <template name="place">
+
         <!--<div class="places">-->
             <h1 class="place-name">{{name}}</h1>
                  <form class="delete-place"><input id="delete" name="delete" type="hidden" value={{_id}}><input type=submit value="XDelete"></form>
@@ -8,6 +9,12 @@
      <div class="conteneur">
         <!-- <div class="all-places row">-->
              
+    <div class="container">
+        
+    <h1>{{name}}</h1>
+                 <form id="delForm"><input id="delete" name="delete" type="hidden" value={{_id}}><input type=submit value="XDelete"></form>
+ <div class="row"> 
+     
     {{#each p in pictures}} 
       <div class="one-place ">
      
