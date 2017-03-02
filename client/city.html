@@ -6,11 +6,12 @@
     {    <div class='container'><div class='row'>
     {{#each a in activities}}
     <div class="col-md-4 activities">
-    <a href="/activities/{{a._id}}"><img src={{a.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+    <a href="{{pathFor route='toActivities'}}"><img src={{a.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
     <h1 class="activity-name">{{a.name}}</h1>
     <p class="description-cities">{{{a.description}}}</p>
         </div>
     {{/each}}
+    <a href="/addEvent/{{_id}}"><img src="/images/add_button.jpeg"></a>
     </div>
         </div>
 </template>

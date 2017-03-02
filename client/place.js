@@ -1,4 +1,4 @@
-emplate.place.helpers({                    
+Template.place.helpers({                    
     activities: function () {
         return Activities.find({nature:"place"});           
     }

@@ -1,0 +1,38 @@
+<template name="addEvent">
+    <a href="/addPlace/{{_id}}">Add Place</a>
+		<div id="addEvent">
+            <form class="event">
+			<h1 class="tittle"> Add Event</h1>
+                <input type="hidden" value="event" class="nature">
+                <label>Place</label>
+                <select name="cityId" id="cityId">
+                    {{#each c in cityOption}}
+                    <option value={{c._id}}>{{c.name}}</option>
+                    {{/each}}
+                </select>
+                <br><br>
+			<label>Name</label>
+			<input name="place" id="name" type="text">
+			<br>
+            <label>Nature</label>
+             <input type="radio" name="nature" value="place">Place of Interest<br>
+            <input type="radio" name="nature" value="event"> Event<br>
+			<div class="textarea">
+				<label class="align">Description</label>
+				<textarea class="hist align" type="text" id="description" name="description"></textarea>
+				<br>
+			</div>
+            <label>Begening Date(yyyy-mm-dd): </label>
+				<input type="date" id = "start" name="begining">
+				<label>End Date(yyyy-mm-dd): </label>
+				<input type="date" id ="end" name="Ending"><br>
+                <input type="submit" value="Add"/>
+            </form>
+		</div>
+     <ul>
+       {{> list all = allplaces}}
+    </ul>
+</template>
+
+
+
