@@ -1,31 +1,40 @@
 <template name="place">
-    <div class="container">
-        
-    <h1>{{name}}</h1>
-                 <form><input id="delete" name="delete" type="hidden" value={{_id}}><input type=submit value="XDelete"></form>
- <div class="row"> 
+        <!--<div class="places">-->
+            <h1 class="place-name">{{name}}</h1>
+                 <form class="delete-place"><input id="delete" name="delete" type="hidden" value={{_id}}><input type=submit value="XDelete"></form>
+ 
+    <p class="place-description">{{description}}</p>
+    <!-- </div>-->
+     <div class="conteneur">
+        <!-- <div class="all-places row">-->
+             
     {{#each p in pictures}} 
-     <div class="col-md-4">
+      <div class="one-place ">
+     
+    
+   
     <img src= {{p}} class="picture-city" alt="Mountain View" style="width:304px;height:228px;" >
-         </div>
-    {{/each}} 
-    </div>
-     <div class="row">
-     <div class="col-sm-4">
-    <p>{{description}}</p>
+    
+        
      </div>
-    </div>
-    <div class="row">
-     <div class="col-md-12">
-    <p>Comments</p>
+        
+    {{/each}} 
+            </div>
+   
+        <!-- </div>-->
+    
+     <div class="comments">
+    <h2 class="comments-name">Comments</h2>
     <p>
         {{#each c in comments}}
+    <h4>{{c.user.email}}</h4>
         {{c.text}}
-        {{c.user.email}}
+        
         {{/each}}
        </p>
-        </div></div>
+       
+        <div class="comment-submit">
         {{>commentSubmit _id=_id}}
     </div>
-    
+    </div>
 </template>
