@@ -2,15 +2,18 @@
 <div class="navbar">
   
     
-    <a id="linklogo" href="/">
+    <a id="linklogo" class="col-sm-4" href="/">
     <img src="images/crossRoadLogo.png" id="logo"></a>
+    
+<!--    <div class="col-sm-8">-->
     <a class="nav" href="/about">About</a>
     <a class="nav" href="/cities">cities</a>
     <a class="nav" href="/contact">contact</a>
     
-    <a class="nav">{{>loginButtons }}</a>
+    <a class="nav" id="login">{{>loginButtons }}</a>
     
     {{>search}}
+    </div>
     
-</div>
+<!--</div>-->
 </template>
