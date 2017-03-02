@@ -1,5 +1,6 @@
 /****************************************Navbar*********************************************/
 
+
 /*
 .navbar a{
     float:left;
@@ -12,77 +13,62 @@
 }
 */
 
-.navbar{
+.navbar {
     background-color: darkgrey;
-/*
+    /*
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 */
 }
-
-.navbar a{
+.navbar a {
     text-decoration: none;
     color: white;
     font-size: 2.3rem;
     text-align: center;
-    
 }
-
-
-#size-logo{
+#size-logo {
     width: 20%;
     transform: translateY(-50%);
-    
 }
-
-
-#searchbar{
-    margin-top: 23px;
+#searchbar {
     border: none;
-    padding: 5px 10px 5px 10px;
-
 }
-
 #nav {
-	padding: 0; 
+    padding: 0;
     margin: 0;
 }
-
-.nav{
+.nav {
     text-decoration: none;
     color: white;
     font-size: 2.3rem;
     text-align: center;
-    
 }
-
 #nav li {
-	display: inline;
-	list-style: none; 
-
+    display: inline;
+    list-style: none;
 }
-
-
-
-
-
-
-
-
-
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav a {
+    margin-left: 10%;
+    margin-right: 10%;
+    /*margin-top: 2.5%;*/
+}
+.nav-first {}
 
 /****************************************Footer*********************************************/
 
-.footer{
+.footer {
     background-color: #233b6c;
     width: 100%;
     position: fixed;
     bottom: 0;
     margin-top: 20px;
 }
-
-.footer p{
+.footer p {
     text-align: center;
     color: darkgrey;
     padding: 10px;

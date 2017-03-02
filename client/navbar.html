@@ -1,28 +1,32 @@
 <template name="navbar">
 
- <div class="navbar">
-  
-    
-<!--
+    <div class="navbar">
+
+
+
+       <!--<a id="linklogo" href="/">
+    <img src="images/Logo.png" id="size-logo"></a>-->
+<ul class="main-nav" id="nav">
+            <li class="nav nav-first"><a href="/about">About</a></li>
+            <li class="nav nav-first"><a href="/cities">cities</a></li>
+            <!-- <li class="nav">
+     
     <a id="linklogo" class="col-sm-4" href="/">
     <img src="images/Logo.png" id="logo"></a>
--->
-   
-    <ul id="nav">
-	    <li><a class="nav" href="/about">About</a></li>
-	    <li><a class="nav" href="/cities">cities</a></li>
-	    <li><a id="linklogo" href="/">
-        <img src="images/Logo.png" id="size-logo"></a></li>
-	    <li><a class="nav" href="/contact">contact</a></li>
-    </ul> 
-    
-    <a class="nav" id="login">{{>loginButtons }}</a>
-    
-    <div class="content-flexbox" id="searchbar">
-        {{>search}}
-    </div>
-    
-<!--
+
+</li>-->
+            <li class="nav nav-first"><a href="/contact">contact</a></li>
+            <li class="nav"><a class="nav" id="login">{{>loginButtons}}</a></li>
+            <li class="nav" id="searchbar">
+                {{>search}}
+            </li>
+        </ul>
+
+
+
+
+
+        <!--
     <div class="content-flexbox" id="gauche">
         <a class="nav" href="/about">About</a>
         <a class="nav" href="/cities">cities</a>
@@ -43,10 +47,10 @@
         {{>search}}
     </div>
 -->
-    
-</div> 
 
-<!--
+    </div>
+
+    <!--
 <ul id="nav">
 	<li><a href="#">Accueil</a></li>
 	<li><a href="#">Services</a></li>
@@ -56,5 +60,3 @@
 -->
 
 </template>
-
-
