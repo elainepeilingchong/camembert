@@ -36,6 +36,7 @@
     background-color: #233b6c;
     width: 100%;
     position: fixed;
+    bottom: 0;
 }
 
 .footer p{
