@@ -1,38 +1,74 @@
 /****************************************Navbar*********************************************/
 
+/*
 .navbar a{
     float:left;
     margin: 2%;
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
-    
-    
+        
 }
+*/
 
 .navbar{
-     background-color: darkgrey;
+    background-color: darkgrey;
+/*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+*/
 }
 
-.searchbar{
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    
+}
+
+
+#size-logo{
+    width: 20%;
+    transform: translateY(-50%);
+    
+}
+
+
+#searchbar{
     margin-top: 23px;
     border: none;
     padding: 5px 10px 5px 10px;
+
 }
 
-#logo{
-    width: 100%;
+#nav {
+	padding: 0; margin: 0;
 }
 
-#linklogo{
-    float: left;
-    width: 20%;
+.nav{
+    text-decoration: none;
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    
 }
 
-#login{
-    right: 0;
+#nav li {
+	display: inline;
+	list-style: none; 
+
 }
+
+
+
+
+
+
+
+
 
 
 /****************************************Footer*********************************************/

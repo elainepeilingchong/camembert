@@ -1,19 +1,60 @@
 <template name="navbar">
-<div class="navbar">
+
+ <div class="navbar">
   
     
+<!--
     <a id="linklogo" class="col-sm-4" href="/">
-    <img src="images/crossRoadLogo.png" id="logo"></a>
-    
-<!--    <div class="col-sm-8">-->
-    <a class="nav" href="/about">About</a>
-    <a class="nav" href="/cities">cities</a>
-    <a class="nav" href="/contact">contact</a>
+    <img src="images/Logo.png" id="logo"></a>
+-->
+   
+    <ul id="nav">
+	    <li><a class="nav" href="/about">About</a></li>
+	    <li><a class="nav" href="/cities">cities</a></li>
+	    <li><a id="linklogo" href="/">
+        <img src="images/Logo.png" id="size-logo"></a></li>
+	    <li><a class="nav" href="/contact">contact</a></li>
+    </ul> 
     
     <a class="nav" id="login">{{>loginButtons }}</a>
     
-    {{>search}}
+    <div class="content-flexbox" id="searchbar">
+        {{>search}}
     </div>
     
-<!--</div>-->
+<!--
+    <div class="content-flexbox" id="gauche">
+        <a class="nav" href="/about">About</a>
+        <a class="nav" href="/cities">cities</a>
+    </div>
+    
+    <div class="content-flexbox" id="logo">
+        <a id="linklogo" href="/">
+        <img src="images/Logo.png" id="size-logo"></a>
+    </div>
+    
+    <div class="content-flexbox" id="droite">
+        <a class="nav" href="/contact">contact</a>
+    
+        <a class="nav" id="login">{{>loginButtons }}</a>
+    </div>
+    
+    <div class="content-flexbox" id="searchbar">
+        {{>search}}
+    </div>
+-->
+    
+</div> 
+
+<!--
+<ul id="nav">
+	<li><a href="#">Accueil</a></li>
+	<li><a href="#">Services</a></li>
+	<li><a href="#">À propos</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>  
+-->
+
 </template>
+
+
