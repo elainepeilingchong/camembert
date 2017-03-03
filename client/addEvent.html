@@ -1,39 +1,36 @@
 <template name="addEvent">
     <a href="/addPlace/{{_id}}">Add Place</a>
+        <div class="container">
+    <div class="col-md-12">
 		<div id="addEvent">
+            <h1>Place:{{name}}</h1>
+            <h3 class="tittle"> Add Event</h3>
             <form class="event">
-			<h1 class="tittle"> Add Event</h1>
+                <input id="cityId" value="{{_id}}" type="hidden">
                 <input type="hidden" value="event" class="nature">
-                <label>Place</label>
-                <select name="cityId" id="cityId">
-                    {{#each c in cityOption}}
-                    <option value={{c._id}}>{{c.name}}</option>
-                    {{/each}}
-                </select>
-                <br><br>
+                <div class="form-group">
 			<label>Name</label>
-			<input name="place" id="name" type="text">
-			<br>
-            <label>Nature</label>
-             <input type="radio" name="nature" value="place">Place of Interest<br>
-            <input type="radio" name="nature" value="event"> Event<br>
-			<div class="textarea">
+			<input name="place" class="form-control" id="name" type="text">
+                </div>
+			<div class="textarea form-group">
 				<label class="align">Description</label>
-				<textarea class="hist align" type="text" id="description" name="description"></textarea>
-				<br>
+				<textarea class="hist align form-control" type="text" id="description" name="description"></textarea>
 			</div>
+                 <div class="form-group">
             <label>Begening Date(yyyy-mm-dd): </label>
-				<input type="date" id = "start" name="begining">
-                <br>
+				<input class="form-control" type="date" id = "start" name="begining">
+                </div>
+                 <div class="form-group">
 				<label>End Date(yyyy-mm-dd): </label>
-				<input type="date" id ="end" name="Ending"><br>
+				<input class="form-control" type="date" id ="end" name="Ending">
+                </div>
                 <input type="submit" value="Add"/>
             </form>
 		</div>
-     <ul>
-       {{> list all = allplaces}}
-    </ul>
+            </div>
+    </div>
 </template>
+
 
 
 

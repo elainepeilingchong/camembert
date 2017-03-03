@@ -1,21 +1,27 @@
-Session.setDefault('search',"");
 
-Template.search.events({
-    'submit form' : function(event)
-    {
-        event.preventDefault();
-        Session.set('search', $("#search").val());
-    }
-    
+Template.main.events({
+  'load #search': function(event) {
+		Session.set('search/keyword', "#####################################################");
+  },
+  'keyup #search': function(event) {
+    Session.set('search/keyword', event.target.value);
+	
+	if (event.target.value=="")
+	{
+		Session.set('search/keyword', "#####################################################");
+	};
+	document.getElementById("result").style.display="block";
+	
+  },
 });
 
-Template.search.helpers({
-    result : function()
-    {
-        if (Session.get('search')=="")
-            return;
-        var regex= new RegExp('^' + Session.get('search'));
-        return Cities.find({name :regex});
-    }
-    
+Template.resultList.helpers({
+  things: function () {
+    var regexp = new RegExp(Session.get('search/keyword'), 'i');
+    return Cities.find({name: regexp});
+  },
+  activities: function () {
+    var regexp = new RegExp(Session.get('search/keyword'), 'i');
+    return Activities.find({name: regexp});
+  }
 });

@@ -1,9 +1,16 @@
-<template name = "search">
-    <form>
-        <input type="search" id="search" placeholder="search"/>XXX
-        <input type="submit" value="ok"/>
-    </form>
-    <ul>
-        {{> list all=result}}
-    </ul>
+
+<template name="search">
+  <div class="searchBar"><input id="search" placeholder="Search" class="form-control"></div>
+  {{> resultList}}
+</template>
+<template name="resultList">
+  <ul id="result">
+      <p>Results :</p>
+    {{#each things}}
+      <li><a href="/city/{{_id}}">- {{name}}</a></li>
+    {{/each}}
+	{{#each activities}}
+      <li><a href="/activity/{{_id}}">- {{name}}</a></li>
+    {{/each}}
+  </ul>
 </template>

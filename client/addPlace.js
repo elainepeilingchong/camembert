@@ -5,12 +5,38 @@ Template.addPlace.events({
           var name =$("#name").val();
            var nature = $(".nature").val();
           var description =$("#description").val();
-          Activities.insert({name : name , nature:nature,description: description},
+           var activity = {
+               name: name,
+               nature: nature,
+               editor: {
+                   "_id": Meteor.userId(),
+                   "email": Meteor.user().emails[0].address
+               },
+               picture: [],
+               comments: [
+                   {
+                       "user": {
+                           "_id": Meteor.userId(),
+                           "email": Meteor.user().emails[0].address
+                       },
+                       "date": new Date(),
+                       "text": "A place to check out !"
+                   }
+               ],
+               description: description,
+               url: ""
+           };
+          Activities.insert(activity,
                             function(error, results){
+              var resultArray=Activities.findOne({_id:results});
+              Cities.update({"_id": cityId
+                    }, {$push: {
+                            "activities": resultArray
+                        }
+                    });
                         Router.go('toActivities', { _id: results });
         });
-          $("#name").val("");
-          $("#description").val("");
+
           }
 });
 

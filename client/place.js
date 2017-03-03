@@ -18,18 +18,8 @@ Template.place.events({
     'submit #delForm': function (event) {
         event.preventDefault();
          var id = $("#delete").val();
-        alert(id);
-       // Activitis.remove({_id:id})
-    }
-  });
-
-
-Template.place.events({                    
-    'submit form': function (event) {
-        event.preventDefault();
-         var id = $("#delete").val();
-        alert(id);
-       // Activitis.remove({_id:id})
+        //alert(id);
+        Activities.remove({_id:id})
     },
     'click #nL' : function(event){
         console.log("j'aime !"+ this.name);

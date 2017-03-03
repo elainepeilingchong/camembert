@@ -1,8 +1,8 @@
 <template name="place">
-
+<div class="container">
     <!--<div class="places">-->
     <h1 class="place-name">{{name}}</h1>
-    <form class="delete-place">
+    <form class="delete-place" id="delForm">
         <input id="delete" name="delete" type="hidden" value={{_id}}>
         <input type=submit value="XDelete">
     </form>
@@ -17,42 +17,28 @@
 
     <p class="place-description">{{description}}</p>
     <!-- </div>-->
-    <div class="conteneur">
+    
         <!-- <div class="all-places row">-->
 
-
-        <h1>{{name}}</h1>
-        <form id="delForm">
-            <input id="delete" name="delete" type="hidden" value={{_id}}>
-            <input type=submit value="XDelete">
-        </form>
         <div class="row">
 
             {{#each p in pictures}}
             <div class="one-place ">
-
-
-
                 <img src={{p}} class="picture-city" alt="Mountain View" style="width:304px;height:228px;">
-
-
             </div>
-
             {{/each}}
         </div>
 
         <!-- </div>-->
-
         <div class="comments">
             <h2 class="comments-name">Comments</h2>
-            <p>
                 {{#each c in comments}}
-                <h4><strong>{{c.user.email}}</strong></h4> {{c.text}} {{/each}}
-            </p>
-
-            <div class="comment-submit">
-                {{>commentSubmit _id=_id}}
+            <p><h4><strong>{{c.user.email}}</strong></h4> {{c.text}} </p>{{/each}}
             </div>
+     <div class="comment-submit">
+        {{#if currentUser}}
+        {{>commentSubmit _id=_id}}
+        {{/if}}
         </div>
     </div>
 </template>

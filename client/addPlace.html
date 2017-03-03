@@ -1,30 +1,28 @@
 <template name="addPlace">
     <a href="/addEvent/{{_id}}">Add Event</a>
+    <div class="container">
+    <div class="col-md-12">
     <div id="addPlace">
+        <h1>Place: {{name}}</h1>
+        <h3 class="tittle"> Add Place</h3>
             <form class="place">
-			<h1 class="tittle"> Add Place</h1>
+                <input id="cityId" value="{{_id}}" type="hidden">
                 <input type="hidden" value="place" class="nature">
-                <label>Place</label>
-                <select name="cityId" id="cityId">
-                    {{#each c in cityOption}}
-
-                    <option value="{{c._id}}" >{{c.name}}</option>
-   
-                    {{/each}}
-                </select>
-                <br><br>
-			<label>Name</label>
-			<input name="place" id="name" type="text">
-			<br>
-            <label>Nature</label>
-             <input type="radio" name="nature" value="place">Place of Interest<br>
-            <input type="radio" name="nature" value="event"> Event<br>
-			<div class="textarea">
+                
+			 <div class="form-group">
+                <label>Name</label>
+			<input name="place" class="form-control" id="name" type="text">
+                </div>
+			<div class="textarea form-group">
 				<label class="align">Description</label>
-				<textarea class="hist align" type="text" id="description" name="description"></textarea>
+				<textarea class="hist align form-control" type="text" id="description" name="description"></textarea>
 				<br>
 			</div>
                 <input type="submit" value="Add"/>
             </form>
 		</div>
+        </div>
+        </div>
 </template>
+
+
