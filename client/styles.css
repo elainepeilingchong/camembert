@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "FromWhereYouAre";
+    src: url('../images/FromWhereYouAre.ttf');
+}
+
 /****************************************Navbar*********************************************/
 
 .container {
@@ -56,6 +61,7 @@ background-color: darkgrey;
     text-decoration: none;
     color: white;
     font-size: 2.3rem;
+    font-family: 'FromWhereYouAre';
 }
 
 #search{
