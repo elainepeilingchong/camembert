@@ -11,28 +11,31 @@
                 <!-- Mise en place du contenu pour le Caroussel -->
                 <div class = "carousel-inner">  
                    
-                    <div class="item active">
-                        <!-- <div class="grey"></div>-->
-                        <img src = "/images/slide.jpg" alt = "img2" class = "img-responsive" style="width:100%;height:100%;">
+                    <div class="item active">    
+                       
+                    
+                        <img  src = "/images/slide.jpg" alt = "img2" class = "img-responsive img-slide" style="width:100%;height:100%;">
                        <h1 class="slideTittle"> Welcome on CrossRoad</h1>
                     </div>
                    
                      {{#each c in cities}}
                     <div class = "item">
-                           <div class="grey">
+                    
+                            
                         
-                        <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:100%;height:100%;" > 
+                        <a href="/city/{{c._id}}"><img class="img-responsive img-slide" src={{c.picture}} alt="Mountain View" style="width:100%;height:100%;" > 
                             <h1 class="slideTittle">{{c.name}}</h1></a>
-                            <p class="slide-content"> {{c.description}}</p>
+                            <p class="slide-content"> {{{c.description}}}</p>
                       </div>
     
-                    </div>
                     {{/each}}
+                    </div>
+                    
                     
 
                     
                                  
-                </div>
+            
                 
                 <!-- Contrôles du Caroussel -->
                 <a class="carousel-control left" href ="#myCarousel" role="button" data-slide = "prev">
