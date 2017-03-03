@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "FromWhereYouAre";
+    src: url('../images/FromWhereYouAre.ttf');
+}
+
+
+.tittle-big{
+    font-size: 4rem;
+    font-family: 'FromWhereYouAre',Arial;
+}
+
+.tittle{
+    font-family: 'FromWhereYouAre', cursive;
+    font-size: 3rem;
+}
+
+.about{
+    font-family: 'Indie Flower', cursive;
+    font-size : 2rem;
+}
