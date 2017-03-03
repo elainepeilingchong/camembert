@@ -21,29 +21,29 @@ Template.search.events({
 //    }
 });
 
+
 Template.resultList.helpers({
-  things: function () {
+    things: function () {
+        var text = Session.get('search/keyword');
+        console.log(text);
+        if(text == undefined){
+            return [];
+        }
+        else{
+            var regexp = new RegExp(Session.get('search/keyword'), 'i');
+            console.log(regexp);
+            return Cities.find({name: regexp});
 
-           var regexp = new RegExp(Session.get('search/keyword'), 'i');
-      
-    return Cities.find({name: regexp});
-   
-  },
-  activities: function () {
+        }},
 
-    var regexp = new RegExp(Session.get('search/keyword'), 'i');
-    return Activities.find({name: regexp});
-      
-  }
+    activities: function () {
+        var text = Session.get('search/keyword');
+        if(text == undefined){
+            return [];
+        }
+        else{
+            var regexp = new RegExp(Session.get('search/keyword'), 'i');
+            return Activities.find({name: regexp});
+        }
+    }
 });
-
-//  activities: function () {
-//       var text = Session.get('search/keyword');
-//      if(text == ""){
-//          return Activities.find({});
-//      }
-//      else{
-//    var regexp = new RegExp(Session.get('search/keyword'), 'i');
-//    return Activities.find({name: regexp});
-//      }
-//  }
