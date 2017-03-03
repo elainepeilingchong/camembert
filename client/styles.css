@@ -3,7 +3,10 @@
     src: url('../images/FromWhereYouAre.ttf');
 }
 
-
+body{
+    font-size: 2rem;
+      font-family: 'Indie Flower', cursive;
+}
 /****************************************Navbar*********************************************/
 .navbar{
     margin-bottom: 0;
