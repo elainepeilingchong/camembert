@@ -99,6 +99,19 @@ city-name {
 
 }
 
+.searchBar{
+    margin-top: 1%;
+}
+
 .result-name a{
    list-style: none;
+}
+
+/*.add-button{
+    width: 50%;
+    height: auto;
+}*/
+
+.name-event{
+ font-family: "FromWhereYouAre";
 }

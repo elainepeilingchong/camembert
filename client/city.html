@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-            <h1 class="tittle-place">Place of Interest</h1>
+            <h1 class="title-place">Place of Interest</h1>
                 </div>
             </div>
             <div class='row'>
@@ -34,11 +34,11 @@
                 </div>
         {{/if}}
     {{/each}}
-             {{#if currentUser}}<a href="/addPlace/{{_id}}"><img class="col-md-4" src="/images/add_button.jpeg" id="button"></a>{{/if}}
+             {{#if currentUser}}<a href="/addPlace/{{_id}}"><img class="col-md-4" src="/images/add.png" id="button"></a>{{/if}}
             </div>
                         <div class="row">
                 <div class="col-md-12">
-            <h1>Event</h1>
+            <h1 CLASS="name-event">Event</h1>
                 </div>
             </div>
             <div class='row'>
@@ -56,7 +56,7 @@
         {{/if}}
     {{/each}}
             
-            {{#if currentUser}}<a href="/addEvent/{{_id}}"><img class="col-md-4" src="/images/add_button.jpeg" id="button"></a>{{/if}}
+            {{#if currentUser}}<a href="/addEvent/{{_id}}"><img class="col-md-4" src="/images/add.png" id="button"></a>{{/if}}
             </div>
         </div>
 </template>
