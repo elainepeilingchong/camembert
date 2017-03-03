@@ -1,6 +1,6 @@
 if (Meteor.isServer) {
     Meteor.methods({
-         reset: function () {
+        reset: function () {
             var p1 = {
                 _id: "c0a0",
                 name: "Langkawi Sky Bridge",
@@ -13,15 +13,15 @@ if (Meteor.isServer) {
                 _id: "c0a1",
                 name: "Dataran Lang (Eagle Square)",
                 nature: "place",
-               pictures: ["/images/Langkawi/Place/02a.jpg", "/images/Langkawi/Place/02b.jpg","/images/Langkawi/Place/02c.jpg"],
+                pictures: ["/images/Langkawi/Place/02a.jpg", "/images/Langkawi/Place/02b.jpg","/images/Langkawi/Place/02c.jpg"],
                 comments: [],
                 description: "Also known as Eagle Square, Dataran Lang is one of Langkawi’s best known manmade attractions, a large sculpture of an eagle poised to take flight. A sight that greets visitors to the island via ferry, the 12 metre-tall statue is one of the island’s most instantly recognizable monuments. Located at the southeast corner of Pulau Langkawi, besides offering beautiful views of Kuah Bay, Dataran Lang has beautiful miniature fountains, terraces and bridges, making it the ideal place for those postcard-perfect holiday photos. The square is a good place to watch ferries ply across the harbour but plan a trip here early in the morning or late in the evening when the sun is at its least intense."
             };
-             var p3 = {
+            var p3 = {
                 _id: "c0a2",
                 name: "Langkawi Cable Car",
                 nature: "place",
-               pictures: ["/images/Langkawi/Place/03a.jpg", "/images/Langkawi/Place/03b.jpg","/images/Langkawi/Place/03c.jpg"],
+                pictures: ["/images/Langkawi/Place/03a.jpg", "/images/Langkawi/Place/03b.jpg","/images/Langkawi/Place/03c.jpg"],
                 comments: [],
                 description: "The entrance for the Langkawi Cable Car, which takes visitors all the way up to Mount Mat Cincang, Langkawi’s second highest peak,  is located in The Oriental Village in the upper northwest of Langkawi Island, near Pantai Kok. Entering the village and passing through the pleasant oriental garden and souvenir shops, visitors make their payment at a counter before stepping onto an escalator which brings them to the cable-car pedestal. Once in, Langkawi Cable Car ascends; you’ll begin to notice the temperature dropping and a windy breeze begin flowing into the cabin through ventilation slits at the top."
             };
@@ -29,7 +29,7 @@ if (Meteor.isServer) {
                 _id: "c0a3",
                 name: "Underwater World Langkawi",
                 nature: "place",
-               pictures: ["/images/Langkawi/Place/04a.jpg", "/images/Langkawi/Place/04b.jpg","/images/Langkawi/Place/04c.jpg"],
+                pictures: ["/images/Langkawi/Place/04a.jpg", "/images/Langkawi/Place/04b.jpg","/images/Langkawi/Place/04c.jpg"],
                 comments: [],
                 description: "Spread across nearly six acres, Underwater World Langkawi is one of the island’s best-known attractions. Located at the southern end of Pantai Cenang (almost at the border of Pantai Tengah), beside the Zon duty-free shopping centre, it is Malaysia’s largest aquarium. The huge white-washed structure houses more than 200 different species of marine and freshwater fish including harbour seals, rockhopper penguins, sharks, giant rays and the enormous Amazonian arapaima – the biggest freshwater fish in the world. Once you enter the air-conditioned interior, Araipamas (the world's largest freshwater fish) can be seen in a medium-sized tank in front of the entrance door. The complex is divided into three sections: Tropical Rainforest, Temperate and Sub-Antarctic. The Sub-Antarctic was probably the most popular section – the ‘penguin-arium’ houses cute little rockhopper and black-footed penguins that cause quite a few people to crowd around the exhibit to get a good look. "
             };
@@ -37,7 +37,7 @@ if (Meteor.isServer) {
                 _id: "c0a4",
                 name: "Pulau Payar Marine Park",
                 nature: "place",
-               pictures: ["/images/Langkawi/Place/05a.jpg", "/images/Langkawi/Place/05b.jpg","/images/Langkawi/Place/05c.jpg"],
+                pictures: ["/images/Langkawi/Place/05a.jpg", "/images/Langkawi/Place/05b.jpg","/images/Langkawi/Place/05c.jpg"],
                 comments: [],
                 description: "Pulau Payar Marine Park is a popular site for snorkelling and diving enthusiasts keen on exploring Langkawi’s undersea action. Just 30km south of the main island, it is about 45 minutes away from the Kuah jetty point and you can take either a catamaran or a speedboat to get here. Comprising four islands, the largest of which is Pulau Payar, and three smaller isles (Pulau Kaca, Pulau Lembu and Pulau Segantang) this marine park is spread over two nautical miles. None of these islands are inhabited and are strictly regulated by the Fisheries Department of Kedah to maintain their pristine condition."
             };
@@ -75,19 +75,19 @@ if (Meteor.isServer) {
                 _id: "c0a8",
                 name: "Grand Aquarium Saint-Malo",
                 nature: "place",
-               pictures: ["/images/Langkawi/Place/05a.jpg", "/images/Langkawi/Place/05b.jpg","/images/Langkawi/Place/05c.jpg"],
+                pictures: ["/images/Langkawi/Place/05a.jpg", "/images/Langkawi/Place/05b.jpg","/images/Langkawi/Place/05c.jpg"],
                 comments: [],
                 description: "Come dream at the Grand Aquarium of Saint Malo ! The aquarium presents 8 themed exhibition rooms from cold abyssal waters to warm tropical waters, a two-hour visit to discover our 50 fish tanks, 10 000 fishes and more than 600 species. The wildlife is colorful, with strange and surprising fish. Dive head first into a deep sea exploration on board the Abyssal Descender, a true-to-life simulator and a unique worldwide attraction."
             };
-                var p7 = {
+            var p7 = {
                 _id: "c0a9",
                 name: "FORT DU PETIT BÉ",
                 nature: "place",
-               pictures: ["/images/stMalo/Place/02a.jpg", "/images/stMalo/Place/02b.jpg","/images/stMalo/Place/02c.jpg"],
+                pictures: ["/images/stMalo/Place/02a.jpg", "/images/stMalo/Place/02b.jpg","/images/stMalo/Place/02c.jpg"],
                 comments: [],
                 description: "Relive the golden era of the Corsair City: authentic anchored battleship, this Vauban fortress of the 17th century is exceptionally located in the Bay of Saint-Malo; from Cap Fréhel to the peninsula of Varde, through the estuary of Rance, it offers an unforgettable view of the Emerald Coast. As a simple visitor or as a master of ceremonies, you will be amazed by the strong character of this original site. Open to the public throughout the year depending on the tides.Access at low tide only"
             };
-               var e4 = {
+            var e4 = {
                 _id: "c0a10",
                 name: "BALADES SUR LE LITTORAL - AU CŒUR DES GRANDES MARÉES",
                 nature: "event",
@@ -97,7 +97,7 @@ if (Meteor.isServer) {
                 dateStart: new Date('2017-11-4'),
                 dateEnd: new Date('2017-11-4')
             };
-            
+
             Activities.remove({})
             Activities.insert(p1);
             Activities.insert(p2);
@@ -127,42 +127,42 @@ if (Meteor.isServer) {
                     name: p1.name,
                     nature: p1.nature,
                     picture: p1.pictures[0]
-  }, {
+                }, {
                     _id: p2._id,
                     name: p2.name,
                     nature: p2.nature,
                     picture: p2.pictures[0]
-  },{
+                },{
                     _id: p3._id,
                     name: p3.name,
                     nature: p3.nature,
                     picture: p3.pictures[0]
-  },{
+                },{
                     _id: p4._id,
                     name: p4.name,
                     nature: p4.nature,
                     picture: p4.pictures[0]
-  } ,{
+                } ,{
                     _id: p5._id,
                     name: p5.name,
                     nature: p5.nature,
                     picture: p5.pictures[0]
-  } , {
+                } , {
                     _id: e1._id,
                     name: e1.name,
                     nature: e1.nature,
                     picture: e1.pictures[0]
-  }, {
+                }, {
                     _id: e2._id,
                     name: e2.name,
                     nature: e2.nature,
                     picture: e2.pictures[0]
-  }, {
+                }, {
                     _id: e3._id,
                     name: e3.name,
                     nature: e3.nature,
                     picture: e3.pictures[0]
-  }]
+                }]
             };
             var stM = {
                 _id: "c1",
@@ -174,29 +174,24 @@ if (Meteor.isServer) {
                 description: "Saint-Malo is a coastal city in Brittany, in France's northwest. Tall granite walls surround the old town, which was once a stronghold for privateers (pirates approved by the king). The Saint-Malo Cathedral, in the center of the old town, is built in Romanesque and Gothic styles and features stained-glass windows depicting city history. Nearby is La Demeure de Corsaire, an 18th-century privateer’s house and museum.",
                 picture: '/images/stMalo/ExtraImage/00a.jpg',
                 activities: [{
-                    _id: p1._id,
-                    name: p1.name,
-                    nature: p1.nature,
-                    picture: p1.pictures[0]
-  }, {
-                    _id: p2._id,
-                    name: p2.name,
-                    nature: p2.nature,
-                    picture: p2.pictures[0]
-  },{
-                    _id: p3._id,
-                    name: p3.name,
-                    nature: p3.nature,
-                    picture: p3.pictures[0]
-  }, {
+                    _id: p6._id,
+                    name: p6.name,
+                    nature: p6.nature,
+                    picture: p6.pictures[0]
+                }, {
+                    _id: p7._id,
+                    name: p7.name,
+                    nature: p7.nature,
+                    picture: p7.pictures[0]
+                }, {
                     _id: e4._id,
                     name: e4.name,
                     nature: e4.nature,
                     picture: e4.pictures[0]
-  }]
+                }]
             };
             Cities.remove({});
             Cities.insert(langkawi);
             Cities.insert(stM);
-    }});
+        }});
 };
