@@ -1,43 +1,48 @@
 <template name="allCity">
 
-    
-      <div class="search-bar">
-    
+
+    <div class="search-bar">
+
         <div>
             {{>search}}
         </div>
-       
-        
-            <div>
-          {{> resultList}}
-            </div>
-        
+
+
+        <div>
+            {{> resultList}}
         </div>
+
+    </div>
     <div class='conteneur'>
-      
-        
-   <!--  <div class="row">
+
+
+        <!--  <div class="row">
             <div class="col-sm-12">
           {{> search-bar}}
             </div>
         </div>-->
-       
-        {{#each c in cities}}
-        <div class="city">
-            <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;"></a>
-            <h1 class="city-name">{{c.name}}</h1>
-            <p class="description-cities">{{{c.description}}}</p>
-            {{#each a in c.activities}}
-            <p class="name-activity">
-                {{a.name}}
-            </p>
-            {{/each}}
-        </div>
 
-    {{/each}}
+        {{#each c in cities}}
+            <div class="city">
+                <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;"></a>
+                <h1 class="city-name">{{c.name}}</h1>
+                <p class="description-cities">{{{c.description}}}</p>
+                {{#each a in c.activities}}
+                    <p class="name-activity">
+                        {{a.name}}
+                    </p>
+                {{/each}}
+            </div>
+
+        {{/each}}
         {{#if currentUser}}
+<<<<<<< HEAD
         <div class="city">
         <a href="/addCity"><img src="/images/add.png" style="width:100%;height:auto;"></a>
+=======
+            <div class="col-md-4 cities">
+                <a href="/addCity"><img src="/images/add_button.jpeg" style="width:50%;height:50%;"></a>
+>>>>>>> aea65863b8ca31dc0a619480d9928a8ae17c9502
             </div>
         {{/if}}
 

@@ -1,29 +1,39 @@
 <template name="city">
 
-<div class="col-lg-12" id="picture-city" style="background-image:url({{picture}});">
-    <div class="col-lg-12" id="dark"></div>
-    <h1 class="name-on-picture">{{name}}</h1>
-    
-</div>
-    
-        <p class="col-lg-12" id="description-city">{{description}}</p>
-        <div class='container'>
-            <div class="row">
-                <div class="col-md-12"> 
-                    <div class="map-container">
-                        {{>map}}
-                    </div>
+    <div class="col-lg-12" id="picture-city" style="background-image:url({{picture}});">
+        <div class="col-lg-12" id="dark"></div>
+        <h1 class="name-on-picture">{{name}}</h1>
+
+    </div>
+
+    <p class="col-lg-12" id="description-city">{{description}}</p>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="map-container">
+                    {{> googleMap name="map" options=mapOptions}}
                 </div>
+
             </div>
+<<<<<<< HEAD
             <div class="row">
                 <div class="col-md-12">
             <h1 class="title-place">Place of Interest</h1>
                 </div>
+=======
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="tittle-place">Place of Interest</h1>
+>>>>>>> aea65863b8ca31dc0a619480d9928a8ae17c9502
             </div>
-            <div class='row'>
-            
+        </div>
+        <div class='row'>
+
             {{#each activities}}
                 {{#if (isPlace nature) }}
+<<<<<<< HEAD
                 <div class="col-md-4 activities">
                     
                     <a href='/activities/{{_id}}'><img src={{picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
@@ -40,11 +50,30 @@
                 <div class="col-md-12">
             <h1 CLASS="name-event">Event</h1>
                 </div>
+=======
+                    <div class="col-md-4 activities">
+
+                        <a href='/activities/{{_id}}'><img src={{picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+
+                        <h3 class="activity-name">{{name}}</h3>
+
+                        <p class="description-cities">{{description}}</p>
+                    </div>
+                {{/if}}
+            {{/each}}
+            {{#if currentUser}}<a href="/addPlace/{{_id}}"><img class="col-md-4" src="/images/add_button.jpeg" id="button"></a>{{/if}}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Event</h1>
+>>>>>>> aea65863b8ca31dc0a619480d9928a8ae17c9502
             </div>
-            <div class='row'>
-            
+        </div>
+        <div class='row'>
+
             {{#each activities}}
                 {{#if (isEvent nature)}}
+<<<<<<< HEAD
                 <div class="col-md-4 activities">
                     
                     <a href='/activities/{{_id}}'><img src={{picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
@@ -58,5 +87,20 @@
             
             {{#if currentUser}}<a href="/addEvent/{{_id}}"><img class="col-md-4" src="/images/add.png" id="button"></a>{{/if}}
             </div>
+=======
+                    <div class="col-md-4 activities">
+
+                        <a href='/activities/{{_id}}'><img src={{picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
+
+                        <h3 class="activity-name">{{name}}</h3>
+
+                        <p class="description-cities">{{description}}</p>
+                    </div>
+                {{/if}}
+            {{/each}}
+
+            {{#if currentUser}}<a href="/addEvent/{{_id}}"><img class="col-md-4" src="/images/add_button.jpeg" id="button"></a>{{/if}}
+>>>>>>> aea65863b8ca31dc0a619480d9928a8ae17c9502
         </div>
+    </div>
 </template>
