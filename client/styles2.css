@@ -56,6 +56,38 @@ city-name {
     margin-right: auto;
 }
 
+#description-city{
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.name-on-picture{
+     font-family: "FromWhereYouAre";
+}
+
+.city-name{
+     font-family: "FromWhereYouAre";
+    font-size: 2rem;
+    text-align: center;
+}
+
+.activity-name{
+     font-family: "FromWhereYouAre";
+    font-size: 1.7rem;
+    /*text-align: center;*/
+    
+}
+
+.activities img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.title-place{
+    font-family: "FromWhereYouAre";
+}
 /*********************************place*****************************/
 .place-description{
     font-size : 2rem;
@@ -64,6 +96,7 @@ city-name {
 .search-bar{
     display:block;
     text-align: center;
+
 }
 
 .result-name a{
