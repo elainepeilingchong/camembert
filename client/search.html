@@ -10,19 +10,13 @@
   <ul id="result">
       <p>Results :</p>
     {{#each things}}
-      <li><a href="/city/{{_id}}">{{name}}</a></li>
+      <li class="result-name"><a  href="/city/{{_id}}">{{name}}</a></li>
     {{/each}}
 	{{#each activities}}
-      <li><a href="/activity/{{_id}}">{{name}}</a></li>
+      <li class="result-name"><a href="/activity/{{_id}}">{{name}}</a></li>
     {{/each}}
   </ul>
         </div>
    
 </template>
 
-<!--<template name="search-bar">
-    <div class="search-bar">
-    {{search}}
-       {{resultlist}}
-    </div>
-</template>-->
