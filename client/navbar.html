@@ -1,65 +1,27 @@
 <template name="navbar">
 
     <div class="navbar">
+        
+        <div class="container">
+            <div id="bb-navbar-collapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="nav" href="/about">About</a></li>
+                    <li><a class="nav" href="/cities">cities</a></li>
+                    <li><a class="nav" href="/contact">contact</a></li>
+                  </ul>
 
+                  <a class="navbar-brand navbar-center" href="#">
+                    <img src="images/Logo.png" id="logo">
+                  </a>
 
-
-        <!--<a id="linklogo" href="/">
-    <img src="images/Logo.png" id="size-logo"></a>-->
-        <ul class="main-nav" id="nav">
-            <li class="nav">
-
-<!--
-                <a id="linklogo" class="col-sm-4" href="/">
-                <img src="images/Logo.png" id="logo"></a>
--->
-
-            </li>
-            <li class="nav nav-first"><a href="/about">About</a></li>
-            <li class="nav nav-first"><a href="/cities">cities</a></li>
-
-            <li class="nav nav-first"><a href="/contact">contact</a></li>
-            <li class="nav"><a class="nav" id="login">{{>loginButtons}}</a></li>
-            <li class="nav" id="searchbar">
-                {{>search}}
-            </li>
-        </ul>
-
-
-
-
-
-        <!--
-    <div class="content-flexbox" id="gauche">
-        <a class="nav" href="/about">About</a>
-        <a class="nav" href="/cities">cities</a>
-    </div>
-    
-    <div class="content-flexbox" id="logo">
-        <a id="linklogo" href="/">
-        <img src="images/Logo.png" id="size-logo"></a>
-    </div>
-    
-    <div class="content-flexbox" id="droite">
-        <a class="nav" href="/contact">contact</a>
-    
-        <a class="nav" id="login">{{>loginButtons }}</a>
-    </div>
-    
-    <div class="content-flexbox" id="searchbar">
-        {{>search}}
-    </div>
--->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="nav">{{>loginButtons}}</a></li>
+                <li id="searchbar">{{>search}}</li>
+              </ul>
+            </div>
+         </div>
 
     </div>
 
-    <!--
-<ul id="nav">
-	<li><a href="#">Accueil</a></li>
-	<li><a href="#">Services</a></li>
-	<li><a href="#">À propos</a></li>
-	<li><a href="#">Contact</a></li>
-</ul>  
--->
 
 </template>
