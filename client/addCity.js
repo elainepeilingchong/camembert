@@ -4,6 +4,7 @@ Template.addCity.events({
           var name =$("#name").val();
            var long=$("#long").val();
            var lat=$("#lat").val();
+           var user=Meteor.user();
           var description =$("#description").val();
            Cities.insert({
                _id: "c" + Cities.find({}).count(),
