@@ -63,4 +63,9 @@ city-name {
 
 .search-bar{
     display:block;
+    text-align: center;
+}
+
+.result-name a{
+   list-style: none;
 }
