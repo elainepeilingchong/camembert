@@ -3,6 +3,7 @@
     src: url('../images/FromWhereYouAre.ttf');
 }
 
+
 /****************************************Navbar*********************************************/
 
 .container-navbar {
@@ -75,9 +76,9 @@ background-color: darkgrey;
 .footer {
     background-color: #233b6c;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin-top: 20px;
+    position: relative;
+    
+    
 }
 .footer p {
     text-align: center;
