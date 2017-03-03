@@ -1,8 +1,18 @@
 <template name="allCity">
 
     <div class='conteneur'>
+        <div class="row">
+        <div class="col-sm-offset-1 col-sm-8">
+            {{>search}}
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+          {{> resultList}}
+            </div>
+        </div>
+        
         {{#each c in cities}}
-
         <div class="city">
             <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;"></a>
             <h1 class="city-name">{{c.name}}</h1>

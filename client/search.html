@@ -1,16 +1,19 @@
 
 <template name="search">
-  <div class="searchBar"><input id="search" placeholder="Search" class="form-control"></div>
-  {{> resultList}}
+  <div class="searchBar"><i class="fa fa-search" aria-hidden="true"></i>  <input id="search" placeholder="Search..">
+</div>
+
 </template>
 <template name="resultList">
+    <div class="result">
   <ul id="result">
       <p>Results :</p>
     {{#each things}}
-      <li><a href="/city/{{_id}}">- {{name}}</a></li>
+      <li><a href="/city/{{_id}}">{{name}}</a></li>
     {{/each}}
 	{{#each activities}}
-      <li><a href="/activity/{{_id}}">- {{name}}</a></li>
+      <li><a href="/activity/{{_id}}">{{name}}</a></li>
     {{/each}}
   </ul>
+        </div>
 </template>

@@ -1,5 +1,6 @@
 Router.configure({
     layoutTemplate: "main",
+    loadingTemplate: 'loading',
     notFoundTemplate: "notFound"
 });
 
@@ -9,7 +10,7 @@ Router.route("/", {
 Router.route("about", {
     template: "about"
 });
-Router.route("Cities", {
+Router.route("city", {
     template: "allCity"
 });
 

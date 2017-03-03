@@ -26,4 +26,18 @@ Template.addCity.helpers({
         return Cities.find();
     }
 });
-
+//Template.addCity.events({
+//       'submit form' : function(event){
+//          event.preventDefault();
+//          var name =$("#name").val();
+//           var long=$("#long").val();
+//           var lat=$("#lat").val();
+//          var description =$("#description").val();
+//           console.log("js "+ name);
+//            Meteor.call('initUploadServerForCity', name, lat, long, description)
+//          }
+//});
+//
+//       
+//    
+//
