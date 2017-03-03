@@ -1,22 +1,22 @@
 <template name="allCity">
-    
-    <div class='container'>
-    {{#each c in cities}}
-    <div class="col-md-4 cities">
-    <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;" ></a>
-    <h1 class="city-name">{{c.name}}</h1>
-    <p class="description-cities">{{{c.description}}}</p>
-    {{#each a in c.activities}}
-    <p class="name-activity">
-        {{a.name}}
-    </p>
-    {{/each}}
+
+    <div class='conteneur'>
+        {{#each c in cities}}
+
+        <div class="city">
+            <a href="/city/{{c._id}}"><img src={{c.picture}} alt="Mountain View" style="width:304px;height:228px;"></a>
+            <h1 class="city-name">{{c.name}}</h1>
+            <p class="description-cities">{{{c.description}}}</p>
+            {{#each a in c.activities}}
+            <p class="name-activity">
+                {{a.name}}
+            </p>
+            {{/each}}
         </div>
-    {{/each}}
-        <div class="col-md-4 cities">
-        <a href="/addCity"><img src="/images/add_button.jpeg" style="width:50%;height:50%;"></a>
-            </div>
+        {{/each}}
+        <div class="city">
+            <a href="/addCity"><img class="add-city-button" src="/images/add_button.jpeg"></a>
         </div>
+
+    </div>
 </template>
-
-
