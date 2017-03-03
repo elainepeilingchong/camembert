@@ -3,6 +3,13 @@
     src: url('../images/FromWhereYouAre.ttf');
 }
 
+.img-about{
+    display: inline-block;
+    overflow:hidden;
+    margin: auto;
+    width:90px;
+    height:90px;
+}*/
 
 .tittle-big{
     font-size: 4rem;
@@ -17,4 +24,35 @@
 .about{
     font-family: 'Indie Flower', cursive;
     font-size : 2rem;
+}
+
+
+
+
+/*------------- FORMULAIRE -------------------*/
+body{
+    font-family: 'Indie Flower', cursive;
+    font-size : 2rem;
+}
+
+#addCity h2{
+    font-family: 'FromWhereYouAre', Arial;
+    font-size: 3rem;
+}
+#addCity{
+    font-family: 'Indie Flower', cursive;
+    font-size : 2rem;
+}
+
+.event{
+    font-family: 'Indie Flower', cursive;
+    font-size : 2rem;
+}
+.city-name{
+    font-family: 'FromWhereYouAre', Arial;
+    font-size: 3rem;
+}
+.truc{
+   font-family: 'Indie Flower', cursive;
+    font-size : 2rem; 
 }
